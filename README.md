@@ -62,6 +62,7 @@ Setting the configuration takes the following properties.
 
 | Argument              | Description                                                              |
 | --------------------- | ------------------------------------------------------------------------ |
+| `player`              | Pass the alt.Player from any event.                                      |
 | `showNameTags`        | Let the player draw all nametags of all players locally.                 |
 | `hideNamesInVehicles` | Hide the nametags of players in vehicles if you're not in their vehicle. |
 | `showBarsOnAim`       | Show Health and Armour Bars when you are aiming at a player.             |
