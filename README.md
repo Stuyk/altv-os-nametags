@@ -76,3 +76,11 @@ alt.on('playerConnect', player => {
     alt.emit('nametags:Config', player, true, false, true, 100);
 });
 ```
+
+# Other alt:V Open Source Resources
+
+-   [Authentication by Stuyk](https://github.com/Stuyk/altv-os-auth)
+-   [Discord Authentication by Stuyk](https://github.com/Stuyk/altv-discord-auth)
+-   [Global Blip Manager by Dzeknjak](https://github.com/jovanivanovic/altv-os-global-blip-manager)
+-   [Global Marker Manager by Dzeknjak](https://github.com/jovanivanovic/altv-os-global-marker-manager)
+-   [Chat by Dzeknjak](https://github.com/jovanivanovic/altv-os-chat)
