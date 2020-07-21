@@ -105,10 +105,8 @@ function drawNametags() {
 
         // Bars
         if (showBarsOnAim && foundEntity && aimingAtPed === player.scriptID && !native.isEntityDead(player.scriptID)) {
-            if (native.getEntityHealth(player.scriptID) > 0) {
-                drawBarBackground(100, lineHeight, scale, 0.25, 139, 0, 0, 255);
-                drawBar(native.getEntityHealth(player.scriptID) - 100, lineHeight, scale, 0.25, 255, 0, 0, 255);
-            }
+            drawBarBackground(100, lineHeight, scale, 0.25, 139, 0, 0, 255);
+            drawBar(native.getEntityHealth(player.scriptID) - 100, lineHeight, scale, 0.25, 255, 0, 0, 255);
 
             if (native.getPedArmour(player.scriptID) > 0) {
                 drawBarBackground(100, lineHeight, scale, 0.75, 140, 140, 140, 255);
