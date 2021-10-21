@@ -96,7 +96,7 @@ function drawNametags() {
         native.setTextColour(255, 255, 255, 255);
         native.setTextOutline();
         native.addTextComponentSubstringPlayerName(isChatting ? `${name}~r~*` : `${name}`);
-        native.endTextCommandDisplayText(0, 0);
+        native.endTextCommandDisplayText(0, 0, 0);
 
         const [foundEntity, aimingAtPed] = native.getEntityPlayerIsFreeAimingAt(
             alt.Player.local.scriptID,
@@ -136,12 +136,13 @@ function drawBar(value, lineHeight, scale, position, r, g, b, a) {
         r,
         g,
         b,
-        a
+        a,
+        false
     );
 }
 
 function drawBarBackground(value, lineHeight, scale, position, r, g, b, a) {
     const width = value * 0.0005 * scale;
-    native.drawRect(0, lineHeight + position * lineHeight, width + 0.002, lineHeight / 3 + 0.002, 0, 0, 0, 255);
-    native.drawRect(0, lineHeight + position * lineHeight, width, lineHeight / 3, r, g, b, a);
+    native.drawRect(0, lineHeight + position * lineHeight, width + 0.002, lineHeight / 3 + 0.002, 0, 0, 0, 255, false);
+    native.drawRect(0, lineHeight + position * lineHeight, width, lineHeight / 3, r, g, b, a, false);
 }
